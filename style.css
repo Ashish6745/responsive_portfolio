@@ -1,0 +1,719 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+nav h1 {
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 100px;
+  color: #24bddf;
+}
+.list li:hover {
+  border: 1px solid #24bddf;
+}
+.list a {
+  text-decoration: none;
+  color: #7d7c7c;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.list li {
+  margin-right: 60px;
+  padding: 5px;
+  font-weight: 800;
+}
+
+.intro {
+  margin: 100px;
+  font-size: 30px;
+  height: 400px;
+}
+.intro span {
+  color: #24bddf;
+}
+.Projects {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #24bddf;
+}
+.Projects a {
+  border: 2px solid #24bddf;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #24bddf;
+}
+
+/* project file styling starts here */
+
+.project_div {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #7D7C7C; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.project_btn button {
+  margin-right: 40px;
+  color: #24bddf;
+  border: 2px solid #24bddf;
+  padding: 8px;
+}
+
+.project_div .grid-container3 {
+  background-color: white;
+  width: 30%;
+  height: 300px;
+  border-radius: 30px;
+  border: 3px solid #24bddf;
+}
+.grid-container3 h2 {
+  font-size: 20px;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+  color: #24bddf;
+}
+
+.grid-container3 p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 20px;
+}
+.navi {
+  text-decoration: none;
+  background-color: #24bddf;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 150px;
+  margin-top: auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.project_div .grid-container2 {
+  background-color: white;
+  width: 30%;
+  height: 300px;
+  border-radius: 30px;
+  border: 3px solid #24bddf;
+}
+.grid-container2 h2 {
+  font-size: 20px;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+  color: #24bddf;
+}
+
+.grid-container2 p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 20px;
+}
+.navi {
+  text-decoration: none;
+  background-color: #24bddf;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 150px;
+  margin-top: auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.project_div .grid-container1 {
+  background-color: white;
+  width: 30%;
+  height: 300px;
+  border-radius: 30px;
+  border: 3px solid #24bddf;
+}
+.grid-container1 h2 {
+  font-size: 20px;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+  color: #24bddf;
+}
+
+.grid-container1 p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 20px;
+}
+.navi {
+  text-decoration: none;
+  background-color: #24bddf;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 150px;
+  margin-top: auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.see_project a {
+  color: #24bddf;
+  border: 2px solid #24bddf;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* -----------Media Queries -------*/
+
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 0px;
+  }
+  nav h1 {
+    font-size: 10px;
+  }
+  .list {
+    font-size: 10px;
+  }
+  .intro h1,
+  h3 {
+    font-size: 20px;
+  }
+  .Projects a {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .project_btn button {
+    margin-right: 15px;
+    padding: 0px;
+  }
+  .grid-container1 h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .grid-container1 p {
+    font-size: 10px;
+  }
+  .grid-container1 .container a {
+    margin-left: 50px;
+    font-size: 10px;
+  }
+  .grid-container2 h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .grid-container2 p {
+    font-size: 10px;
+  }
+  .grid-container2 .container a {
+    margin-left: 50px;
+    font-size: 10px;
+  }
+  .grid-container3 h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .grid-container3 p {
+    font-size: 10px;
+  }
+  .grid-container3 .container a {
+    margin-left: 50px;
+    font-size: 10px;
+  }
+  .see_project a {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+
+  .experience_content{
+    width: 200px;
+    height: 200px;
+
+}
+.experience-div {
+    height: 20vh;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10px;
+}
+.experience_heading {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+
+}
+.desc p{
+    padding: 10px;
+     margin: 5px;
+     font-size: 12px;
+    
+   
+}
+  
+}
+
+.experience-div{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #f5f4f4; 
+   
+}
+.experience_content{
+    width: 400px;
+    height: 400px;
+    background-color: #24bddf;
+    box-shadow: 0 8px 16px 0px;
+
+}
+.experience_heading {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+
+}
+.desc p{
+    padding: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: bold;
+     margin: 10px;
+     color: white;
+   
+}
+
+@media only screen and (min-width: 768px) {
+  nav h1 {
+    font-size: 14px;
+  }
+  .list {
+    font-size: 14px;
+  }
+  .intro h1,
+  h3 {
+    font-size: 24px;
+  }
+  .Projects a {
+    padding: 8px;
+    border-radius: 14px;
+    font-size: 14px;
+  }
+  .grid-container1 h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .grid-container1 p {
+    font-size: 12px;
+  }
+  .grid-container1 .container a {
+    margin-left: 80px;
+    font-size: 12px;
+  }
+  .grid-container2 h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .grid-container2 p {
+    font-size: 12px;
+  }
+  .grid-container2 .container a {
+    margin-left: 80px;
+    font-size: 12px;
+    margin-top: 18px;
+  }
+  .grid-container3 h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .grid-container3 p {
+    font-size: 12px;
+  }
+  .grid-container3 .container a {
+    margin-left: 80px;
+    font-size: 12px;
+  }
+  .see_project a {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .Projects a {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .experience_content{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+.experience-div {
+    height: 50vh;
+    width: 50vw;
+   margin: auto;
+   
+}
+.experience_heading {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+
+}
+.desc p{
+    padding: 10px;
+     margin: 10px;
+     font-size: 13px;
+    
+   
+}
+}
+
+@media only screen and (min-width: 992px) {
+  nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  nav h1 {
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 100px;
+    color: #24bddf;
+  }
+  .list li:hover {
+    border: 1px solid #7d7c7c;
+  }
+  .list a {
+    text-decoration: none;
+    color: #7d7c7c;
+  }
+
+  .list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .list li {
+    margin-right: 60px;
+    padding: 5px;
+    font-weight: 800;
+  }
+
+  .intro {
+    margin: 100px;
+    font-size: 30px;
+    height: 400px;
+  }
+  .intro span {
+    color: #24bddf;
+  }
+  .Projects {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #24bddf;
+  }
+  .Projects a {
+    border: 2px solid #24bddf;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #24bddf;
+  }
+
+  /* project file styling starts here */
+
+  .project_div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .project_btn button {
+    margin-right: 40px;
+    color: #24bddf;
+    border: 2px solid #24bddf;
+    padding: 8px;
+  }
+
+  .project_div .grid-container3 {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 30px;
+    border: 3px solid #24bddf;
+  }
+  .grid-container3 h2 {
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    color: #24bddf;
+  }
+
+  .grid-container3 p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .grid-container2 .container a {
+    margin-left: 100px;
+    font-size: 15px;
+  }
+  .grid-container3 .container a {
+    margin-left: 100px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .grid-container1 .container a {
+    margin-left: 100px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .navi {
+    text-decoration: none;
+    background-color: #24bddf;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: auto;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .project_div .grid-container2 {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 30px;
+    border: 3px solid #24bddf;
+  }
+  .grid-container2 h2 {
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    color: #24bddf;
+  }
+
+  .grid-container2 p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .navi {
+    text-decoration: none;
+    background-color: #24bddf;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: auto;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .project_div .grid-container1 {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 30px;
+    border: 3px solid #24bddf;
+  }
+  .grid-container1 h2 {
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    color: #24bddf;
+  }
+
+  .grid-container1 p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .navi {
+    text-decoration: none;
+    background-color: #24bddf;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: auto;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .see_project a {
+    color: #24bddf;
+    border: 2px solid #24bddf;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .experience_content{
+    width: 350px;
+    height: 350px;
+
+}
+.experience-div {
+    height: 90vh;
+    width: 90vw;
+  margin: auto;
+}
+.experience_heading {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+
+}
+.desc p{
+    padding: 10px;
+     margin: 10px;
+     font-size: 15px;
+    
+   
+}
+}
+@media only screen and (min-width: 1200px){
+    .grid-container2 .container a {
+        margin-left: 130px;
+        font-size: 15px;
+      }
+      .grid-container3 .container a {
+        margin-left: 130px;
+        font-size: 15px;
+        margin-top: 15px;
+      }
+      .grid-container1 .container a {
+        margin-left: 130px;
+        font-size: 15px;
+        margin-top: 15px;
+      }
+      nav h1 {
+        font-size: 22px;
+      }
+      .list li {
+        margin-right: 60px;
+        padding: 5px;
+        font-weight: 800;
+        font-size: 22px;
+      }
+      .intro h1,
+  h3 {
+    font-size: 50px;
+  }
+  .Projects a {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .experience_content{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+
+}
+.experience-div {
+    height: 100vh;
+    margin: auto;
+}
+.experience_heading {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+
+}
+.desc p{
+    padding: 10px;
+     margin: 10px;
+     font-size: 15px;
+    
+   
+}
+
+
+}
+
+
+

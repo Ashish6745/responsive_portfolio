@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 10px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        padding: 5px;
+      }
+      .contact-form button {
+        padding: 10px;
+        background-color: #24bddf;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: red;
+      }
+      .contact-page {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DDDDDD;
+      }
+      .inp {
+        border: 3px solid #24bddf;
+        border-radius: 20px;
+        color: #24bddf;
+        outline: none;
+      }
+      input::-webkit-input-placeholder {
+        color: #24bddf;
+      }
+      textarea::-webkit-input-placeholder {
+        color: #24bddf;
+      }
+      .cont-div {
+        width: 400px;
+        height: 400px;
+      border-radius: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border: 2px solid #24bddf;
+       box-shadow: 0 8px 16px 8px black;
+       transition: transform 0.3s ease-in-out;
+      }
+      .cont-div:hover {
+    transform: translateY(10px);
+}
+@media only screen and (max-width: 600px) {
+    
+}
+    </style>
+  </head>
+  <body>
+    <div class="contact-page">
+      <div class="cont-div">
+        <form id="contactForm" class="contact-form">
+          <input
+            class="inp"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+          />
+          <input
+            class="inp"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
+          <textarea
+            class="inp"
+            id="message"
+            name="message"
+            placeholder="Your message.."
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var name = document.getElementById("name");
+          var email = document.getElementById("email");
+          var message = document.getElementById("message");
+
+          localStorage.setItem("name", name.value);
+          localStorage.setItem("email", email.value);
+          localStorage.setItem("message", message.value);
+
+          alert("Data saved in local storage.");
+
+          // Clear the input fields
+          name.value = "";
+          email.value = "";
+          message.value = "";
+        });
+    </script>
+  </body>
+</html>
